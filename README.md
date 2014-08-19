@@ -32,3 +32,7 @@ There should be tests for:
 * Wether a page has a category
 * What happens with pages that have a category that is deleted?
 
+##Documentation
+
+All neccessary changes to files outside of the app (this repo) should be recorded here.
+
