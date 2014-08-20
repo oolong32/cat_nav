@@ -38,6 +38,18 @@ All neccessary changes to files outside of the app (this repo) should be recorde
 
 ###Changes to ../project_folder/settings.py
 
+Edit the mysite/settings.py file again, and change the INSTALLED_APPS setting to include the string 'cat_nav'. 
+
+> INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'cat_nav',
+)
+
 ###Changes to ../project_folder/urls.py
 
 ###Chagens to files in ../templates/admin/
