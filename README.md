@@ -55,7 +55,7 @@ INSTALLED_APPS = (
 
 Then create the neccessary tables in the database:
 
-> $ python manage.py sql cat_nav
+`$ python manage.py sql cat_nav`
 
 You should see something similar to the following (the CREATE TABLE SQL statements for the cat_nav app):
 
@@ -81,7 +81,7 @@ COMMIT;
 
 Now, run syncdb again to create those model tables in your database:
 
-> $ python manage.py syncdb
+`$ python manage.py syncdb`
 
 ###Changes to ../project_folder/urls.py
 
