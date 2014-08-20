@@ -36,7 +36,9 @@ There should be tests for:
 
 All neccessary changes to files outside of the app (this repo) should be recorded here.
 
-###Changes to ../settings.py
+###Changes to ../project_folder/settings.py
 
-###Changes to ../urls.py
+###Changes to ../project_folder/urls.py
+
+###Chagens to files in ../tempates/admin/
 
