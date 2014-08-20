@@ -52,6 +52,11 @@ INSTALLED_APPS = (
 )
 ```
 
+Then create the neccessary tables in the database:
+
+> $ python manage.py sql cat_nav
+
+
 ###Changes to ../project_folder/urls.py
 
 ###Chagens to files in ../templates/admin/
