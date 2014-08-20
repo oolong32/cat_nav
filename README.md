@@ -56,6 +56,27 @@ Then create the neccessary tables in the database:
 
 > $ python manage.py sql cat_nav
 
+You should see something similar to the following (the CREATE TABLE SQL statements for the cat_nav app):
+
+```shell
+BEGIN;
+CREATE TABLE "cat_nav_product_categories" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "category_name" varchar(100) NOT NULL,
+    "category_order" integer NOT NULL
+)
+;
+CREATE TABLE "cat_nav_page_container" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "page_title" varchar(200) NOT NULL,
+    "page_content" text NOT NULL,
+    "page_order" integer NOT NULL,
+    "page_categories_id" integer NOT NULL REFERENCES "cat_nav_product_categories" ("id")
+)
+;
+
+COMMIT;
+```
 
 ###Changes to ../project_folder/urls.py
 
