@@ -40,5 +40,5 @@ All neccessary changes to files outside of the app (this repo) should be recorde
 
 ###Changes to ../project_folder/urls.py
 
-###Chagens to files in ../tempates/admin/
+###Chagens to files in ../templates/admin/
 
