@@ -36,3 +36,7 @@ There should be tests for:
 
 All neccessary changes to files outside of the app (this repo) should be recorded here.
 
+###Changes to ../settings.py
+
+###Changes to ../urls.py
+
