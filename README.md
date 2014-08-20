@@ -58,7 +58,7 @@ Then create the neccessary tables in the database:
 
 You should see something similar to the following (the CREATE TABLE SQL statements for the cat_nav app):
 
-```shell
+```sql
 BEGIN;
 CREATE TABLE "cat_nav_product_categories" (
     "id" integer NOT NULL PRIMARY KEY,
