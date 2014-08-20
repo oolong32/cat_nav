@@ -85,7 +85,11 @@ Now, run syncdb again to create those model tables in your database:
 
 ###Changes to ../project_folder/urls.py
 
+Will be explained in time. Be patient.
+
 ###Chagens to files in ../templates/admin/
+
+Will be explained in time. Be patient.
 
 ##Tests in the Python Interpreter
 
