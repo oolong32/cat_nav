@@ -8,7 +8,7 @@ class product_categories(models.Model):
     # Should eventually allow the admin to change the order by which the categories are displayed
     category_order = models.IntegerField(default=0)
     def __unicode__(self):
-        return self.question
+        return self.category_name
 
 class page_container(models.Model):
     # Content of page and it's title. What max_length should be used here?
@@ -20,6 +20,10 @@ class page_container(models.Model):
     # Category ("~ies"?)
     page_categories = models.OneToManyField(product_categories)
     # Links to Pages containing similar Information
-    page_context_links = models.XXXXXXXX()
+    """
+    Der nächste Punkt soll Links zu Seiten enthalten, die verwandte Produkte enthalten. Voraussichtlich ist hier der falsche Ort dafür. Ich gehe davon aus, dass es hierfür eine eigene Klasse brauchen wird.
+    """
+    # page_context_links = models.XXXXXXXX()
     def __unicode__(self):
-        return self.question
+        return self.page_title
+        return self.page_content

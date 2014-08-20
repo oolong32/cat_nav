@@ -34,7 +34,7 @@ There should be tests for:
 
 ##Documentation
 
-All neccessary changes to files outside of the app (this repo) should be recorded here.
+I try to record all neccessary changes to files outside of the app (this repo). _project_folder_ needs to be changed to the respective project's name.
 
 ###Changes to ../project_folder/settings.py
 
@@ -48,7 +48,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
+    'cat_nav',
 )
 ```
 
