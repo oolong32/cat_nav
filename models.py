@@ -25,6 +25,11 @@ class page_container(models.Model):
     Der nächste Punkt soll Links zu Seiten enthalten, die verwandte Produkte enthalten. Voraussichtlich ist hier der falsche Ort dafür. Ich gehe davon aus, dass es hierfür eine eigene Klasse brauchen wird.
     """
     # page_context_links = models.XXXXXXXX()
+    
+    """
+    In Python 3 __unicode__ will need to be replaced by __str__ (?)
+    """
     def __unicode__(self):
+        """
         return self.page_title
         return self.page_content
