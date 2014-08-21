@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url
 
-from page_categories import views
+from cat_nav import views
 
 urlpatterns = patterns('',
     url(r'^$', views.index, name='index')
