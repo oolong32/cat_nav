@@ -12,10 +12,6 @@ class PageAdmin(admin.ModelAdmin):
 admin.site.register(page_container, PageAdmin)
 
 class CategoryAdmin(admin.ModelAdmin):
-    """
-    It's not really neccessary to have an extra model for the categories,
-    but you never know.
-    """
     list_display = ('category_name', 'category_order')
     fields = ['category_name', 'category_order']
     
