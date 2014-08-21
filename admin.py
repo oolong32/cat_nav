@@ -16,6 +16,7 @@ class CategoryAdmin(admin.ModelAdmin):
     It's not really neccessary to have an extra model for the categories,
     but you never know.
     """
+    list_display = ('category_name', 'category_order')
     fields = ['category_name', 'category_order']
     
 admin.site.register(product_categories, CategoryAdmin) 
