@@ -1,5 +1,5 @@
 <ul>
 {% for product_name in product.page_container_set.all  %}
-  <li>{{ product_name }}</li>
+  <li>{{ product_name.page_title }}</li>
 {% endfor %}
 </ul>
