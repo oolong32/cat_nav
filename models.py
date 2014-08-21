@@ -23,8 +23,9 @@ class page_container(models.Model):
     # Links to Pages containing similar Information
     """
     Der nächste Punkt soll Links zu Seiten enthalten, die verwandte Produkte enthalten. Voraussichtlich ist hier der falsche Ort dafür. Ich gehe davon aus, dass es hierfür eine eigene Klasse brauchen wird.
+    Oder nicht. Ein manyToMany auf sich selbst sollte gehen.
     """
-    # page_context_links = models.XXXXXXXX()
+    # page_context_links = models.ManyToManyField("self")
     
     """
     In Python 3 __unicode__ will need to be replaced by __str__ (?)
