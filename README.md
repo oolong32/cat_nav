@@ -26,6 +26,8 @@ In order to build a webpage with a three-column layout, whereas the first two co
 
 At a later time the neccessity of being able to add more than one cateogory to a page might arise.
 
+Or it might not.
+
 ##Tests
 
 There should be tests for:
