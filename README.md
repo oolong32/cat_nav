@@ -83,20 +83,7 @@ Now, run syncdb again to create those model tables in your database:
 
 > $ python manage.py syncdb
 
-###Changes to urls.py and ../project_folder/urls.py
-
-Create a file called urls.py within the app folder and add Information to show the view 'index' defined in views.py.
-
-```python
-from django.conf.urls import patterns, url
-
-from page_categories import views
-
-urlpatterns = patterns('',
-    url(r'^$', views.index, name='index')
-)
-
-```
+###Changes to ../project_folder/urls.py
 
 Point the root URLconf at the cat_nav.urls module. In project_folder/urls.py insert an include().
 
@@ -111,7 +98,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 )
 ```
-
 
 ###Changes to files in ../templates/admin/
 
