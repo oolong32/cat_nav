@@ -81,15 +81,24 @@ COMMIT;
 
 Now, run syncdb again to create those model tables in your database:
 
-`$ python manage.py syncdb`
+> $ python manage.py syncdb
 
 ###Changes to ../project_folder/urls.py
 
 Will be explained in time. Be patient.
 
-###Chagens to files in ../templates/admin/
+###Changes to files in ../templates/admin/
 
-Will be explained in time. Be patient.
+Open your settings file (project_folder/settings.py) and add a TEMPLATE_DIRS setting:
+
+```python
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+```
+
+Copy the template admin/base_site.html from within the default Django admin template directory in the source code of Django itself (django/contrib/admin/templates) into that directory.
+Hint: Django resides (in my case) in python's 'site-packages' folder.
+
+Edit as you see fit.
 
 ##Tests in the Python Interpreter
 
