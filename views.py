@@ -1,5 +1,4 @@
-from django.http import Http404
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404 
 
 from cat_nav.models import product_categories, page_container
 
@@ -14,10 +13,7 @@ def index(request):
     return render(request, 'cat_nav/index.html', context)
 
 def products(request, page_categories_id)
-    try:
-        product = page_container.objects.get(pk=page_categories_id)
-    except page_container.objects.DoesNotExist:
-        raise Http404
+    product = get_object_or_404 (page_container, pk=page_categories_id)
     return render(request, 'cat_nav/products.html', {'product': product})
     
 #     return HttpResponse("You're looking at the List of Pages in Category %s." % page_categories_id)
