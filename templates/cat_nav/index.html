@@ -1,0 +1,9 @@
+{% if category_list %}
+  <ul>
+  {% for category in category_list  %}
+    <li><a href="/cat_nav/{{ category.id }}/">{{ category.category_name }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No categories defined.</p>
+{% endif %}
