@@ -6,6 +6,8 @@ class PageAdmin(admin.ModelAdmin):
     list_display = ('page_title', 'page_categories')
     # page container edit page: show title and category in same field, then the content.
     fields = [('page_title', 'page_categories'), 'page_content']
+    # filter pages by categories
+    list_filter = ['page_categories']
 
 admin.site.register(page_container, PageAdmin)
 
