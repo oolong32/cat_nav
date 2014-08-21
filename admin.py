@@ -9,4 +9,12 @@ class PageAdmin(admin.ModelAdmin):
 
 admin.site.register(page_container, PageAdmin)
 
-admin.site.register(product_categories) 
+class CategoryAdmin(admin.ModelAdmin):
+    """
+    It's not really neccessary to have an extra model for the categories,
+    but you never know.
+    """
+    # Show three rows to add new Categories, to make life easier.
+    fields = ['category_name', 'category_order']
+    
+admin.site.register(product_categories, CategoryAdmin) 

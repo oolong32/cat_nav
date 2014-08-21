@@ -19,7 +19,7 @@ class page_container(models.Model):
     # Number to be used to define order of listed page names
     page_order = models.IntegerField('Order of Page', default=0)
     # Category ("~ies"?)
-    page_categories = models.ForeignKey(product_categories, verbose_name="Category")
+    page_categories = models.ForeignKey(product_categories, verbose_name="Category", on_delete=models.PROTECT)
     # Links to Pages containing similar Information
     """
     Der nächste Punkt soll Links zu Seiten enthalten, die verwandte Produkte enthalten. Voraussichtlich ist hier der falsche Ort dafür. Ich gehe davon aus, dass es hierfür eine eigene Klasse brauchen wird.
