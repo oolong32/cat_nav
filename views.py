@@ -12,8 +12,8 @@ def index(request):
     context = {'category_list': category_list}
     return render(request, 'cat_nav/index.html', context)
 
-def products(request, page_categories_id)
-    product = get_object_or_404 (page_container, pk=page_categories_id)
+def products(request, page_categories_id):
+    product = get_object_or_404 (product_categories, pk=page_categories_id)
     return render(request, 'cat_nav/products.html', {'product': product})
     
 def details(request, page_categories_id): 
