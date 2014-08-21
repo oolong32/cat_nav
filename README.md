@@ -33,6 +33,8 @@ There should be tests for:
 * Wether a page has a category
 * What happens with pages that have a category that is deleted?
 
+It seems these tests aren't neccessary at all. Django doesn't allow a page without category and deletes pages, when their category is deleted (not without asking first, of course).
+
 ##Documentation
 
 I try to record all neccessary changes to files outside of the app (this repo). _project_folder_ needs to be changed to the respective project's name.
@@ -83,7 +85,7 @@ Now, run syncdb again to create those model tables in your database:
 
 > $ python manage.py syncdb
 
-###Changes to ../project_folder/urls.py
+###Changes to and ../project_folder/urls.py
 
 Point the root URLconf at the cat_nav.urls module. In project_folder/urls.py insert an include().
 
@@ -98,6 +100,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 )
 ```
+
 
 ###Changes to files in ../templates/admin/
 
