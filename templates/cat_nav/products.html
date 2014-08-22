@@ -1,5 +1,9 @@
+{% if product.page_container_set.all %}
 <ul>
 {% for product_name in product.page_container_set.all  %}
-  <li>{{ product_name.page_title }}</li>
+  <li><a href="/cat_nav/{{ page_categories.id }}">{{ product_name.page_title }}</a></li>
 {% endfor %}
 </ul>
+{% else %}
+  <p>Category<br />without<br />products.</p>
+{% endif %}
