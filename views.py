@@ -16,8 +16,7 @@ def products(request, page_categories_id):
     product = get_object_or_404 (product_categories, pk=page_categories_id)
     return render(request, 'cat_nav/products.html', {'product': product})
     
-def details(request, page_categories_id): 
-    pass
-    # return HttpResponse("You're looking at page %s." % page_categories_id)
-
+def details(request, page_categories_id, page_container_id): 
+    page = get_object_or_404(page_container, pk=page_container_id)
+    return render(request, 'cat_nav/content.html', {'page': page})
 
