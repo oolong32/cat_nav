@@ -1,7 +1,8 @@
 {% if product.page_container_set.all %}
 <ul>
 {% for product_name in product.page_container_set.all  %}
-  <li><a href="/cat_nav/{{ product.id }}/details/{{ product_name.pk }}">{{ product_name.page_title }}</a></li>
+  <li><a href="/cat_nav/{{ product.id }}/details/{{ product_name.pk }}/">{{ product_name.page_title }}</a></li>
+  {# product.id refers to the ID of the product_category, product_name.pk to the ID of the page_container object. #}
 {% endfor %}
 </ul>
 {% else %}
