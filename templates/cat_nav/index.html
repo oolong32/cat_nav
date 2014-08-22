@@ -1,7 +1,8 @@
 {% if category_list %}
   <ul>
   {% for category in category_list  %}
-    <li><a href="/cat_nav/{{ category.id }}/">{{ category.category_name }}</a></li>
+    {# eventually "category.id" should be replaced by "category.category_name" #}
+    <li><a href="{% url 'products' category.id %}">{{ category.category_name }}</a></li>
   {% endfor %}
   </ul>
 {% else %}
