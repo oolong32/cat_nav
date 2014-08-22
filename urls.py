@@ -12,4 +12,6 @@ urlpatterns = patterns('',
 genauso sollte die referenz zum page_container objekt nicht durch eine id, sondern durch den namen angezeigt werden.
 dem aufmerksamen betrachter mag aufgefallen sein, dass die url fuer "details" fehlerhaft ist, es gibt keine referenz zu einem objekt in "page_container"
 Was passiert mit Bezeichnungen, die Underscores oder Spaces enthalten?
+
+Im Produkt Template gibt es immer noch einen hard-coded Link – keine ahnung wie ich den vereinfachen kann, weil er an zwei unterschiedlichen Stellen einen Wert "einfaengt".
 """
