@@ -1,6 +1,7 @@
-{% load staticfiles %}
-<link rel="stylesheet" type="text/css" href="{% static 'cat_nav/style.css' %}">
+{% extends "base.html" %}
+{% block title %} – Category List! {% endblock %}
 
+{% block categories %}
 {% if category_list %}
   <ul>
   {% for category in category_list  %}
@@ -11,3 +12,4 @@
 {% else %}
   <p>No categories defined.</p>
 {% endif %}
+{% endblock %}

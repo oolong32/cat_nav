@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{# language info above should eventually be replaced by respective languages #}
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test 3 Column Category Navigation{% block title %}{% endblock %}</title>
+
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'cat_nav/style.css' %}">
+
+</head>
+<body>
+<h1>My wonderful Test</h1>
+<div class="content-block-1">
+{% block categories %}
+{% endblock %}
+</div>
+
+<div class="content-block-2">
+{% block products %}
+{% endblock %}
+</div>
+
+<div class="content-block-3">
+{% block product-details %}
+{% endblock %}
+</div>
+
+</body>
+</html>
