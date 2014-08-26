@@ -32,7 +32,7 @@ Or it might not.
 
 There should be tests for:
 
-* Wether a page has a category
+* Whether a page has a category
 * What happens with pages that have a category that is deleted?
 
 It seems these tests aren't neccessary at all. Django doesn't allow a page without category and deletes pages, when their category is deleted (not without asking first, of course).
@@ -119,7 +119,7 @@ Edit as you see fit.
 
 ##Tests in the Python Interpreter
 
-So far, with a model configuration that is based on the django poll tutorial, whereas I replaced the "Poll" model with _product_categories_ and "Choices" with _page_containers_, I can create pages that refer to _one_ category. And categories that refer to multiple pages. I am not sure however, wether it's possible to have pages, that belong to _more than one category_.
+So far, with a model configuration that is based on the django poll tutorial, whereas I replaced the "Poll" model with _product_categories_ and "Choices" with _page_containers_, I can create pages that refer to _one_ category. And categories that refer to multiple pages. I am not sure however, whether it's possible to have pages, that belong to _more than one category_.
 Update: Indeed, it is not possible. Django handles everything most gracefully however. Maybe it will suffice like it is.
 
 ```python
