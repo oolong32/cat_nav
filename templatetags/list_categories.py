@@ -1,6 +1,5 @@
 from django import template
-from cat_nav.models import product_categories, page_container
-# page_container import not needed, is it?
+from cat_nav.models import product_categories
 register = template.Library()
 
 def list_categories(category):
