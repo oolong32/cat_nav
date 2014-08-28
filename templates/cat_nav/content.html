@@ -1,4 +1,14 @@
 {% extends "cat_nav/base.html" %}
+{% load list_categories list_products %}
+{% block title %} – Product Details!! {% endblock %}
+
+{% block categories %}
+  {% list_categories category %}
+{% endblock %}
+
+{% block products %}
+  {% list_products  product %}
+{% endblock %}
 
 {% block product-details %}
 

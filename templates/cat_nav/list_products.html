@@ -1,0 +1,11 @@
+{% if product_list %}
+  <h2>list below needs a filter badly!</h2>
+  <ul>
+  {% for product in product_list %}
+  <li><a href="/cat_nav/{{ product.id }}/details/{{ product.pk }}/">{{ product.page_title }}</a> – ID: {{ product.pk }}, Category-ID: {{product.page_categories.id}}</li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No products defined.</p>
+{% endif %}
+
