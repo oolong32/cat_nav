@@ -8,6 +8,10 @@ class product_categories(models.Model):
     category_name = models.CharField(max_length=100)
     # Should eventually allow the admin to change the order by which the categories are displayed
     category_order = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ["-category_order"]
+
     def __unicode__(self):
         return self.category_name
 
