@@ -3,7 +3,7 @@ from django.conf.urls import patterns, url
 from cat_nav import views
 
 urlpatterns = patterns('',
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.CategoryList),
     url(r'^(?P<page_categories_id>\d+)/$', views.products, name='products'),
     url(r'^(?P<page_categories_id>\d+)/details/(?P<page_container_id>\d+)/$', views.details, name='details'),
 )
