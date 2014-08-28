@@ -1,4 +1,4 @@
-from djago.views.generic import ListView
+from django.views.generic import ListView
 from django.shortcuts import render, get_object_or_404 
 
 from cat_nav.models import product_categories, page_container
@@ -8,7 +8,7 @@ Die Views sollten vielleicht anders heissen, bzw. ist "cat-nav" in der URL unbef
 Ebenfalls unbefriedigend ist die anzeige von numerischen id's in der URL statt Namen von Kategorien und Produkten.
 """
 
-class CategoryList
+class CategoryList(ListView):
     model = product_categories
 
 # def index(request):
