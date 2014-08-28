@@ -7,6 +7,14 @@
   <ul>
   {% for category in object_list  %}
     <li><a href="{% url 'products' category.id %}">{{ category.category_name }}</a></li>
+      {% if category.page_container_set %}
+        {% for product in category.page_container_set.all %}
+          <p>{{ product.page_title }}</p>
+        {% endfor %}
+      {% else %}
+      {# category with no product does pass condition above, why? #}
+      <p>No products under this category.</p>
+      {% endif %}
   {% endfor %}
   </ul>
 {% else %}
