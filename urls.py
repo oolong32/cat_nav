@@ -5,7 +5,7 @@ from cat_nav import views
 
 urlpatterns = patterns('',
     url(r'^$', CategoryList.as_view()),
-    url(r'^(?P<page_categories_id>\d+)/$', views.products, name='products'),
+    # url(r'^(?P<page_categories_id>\d+)/$', views.products, name='products'),
     url(r'^(?P<page_categories_id>\d+)/details/(?P<page_container_id>\d+)/$', views.details, name='details'),
 )
 """
