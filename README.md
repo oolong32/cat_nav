@@ -19,6 +19,7 @@ In order to build a webpage with a category based navigation the following is ne
 
 ###To Do
 
+* Display "page order" field in product admin
 * Possibilty of choosing "context links" for a given product page[&sup2;](#2)
 * Retrieve Information from Link/URL to write HTML class
 * Markdown editor for page content
