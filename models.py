@@ -8,8 +8,12 @@ class product_categories(models.Model):
     category_name = models.CharField(max_length=100)
     # Should eventually allow the admin to change the order by which the categories are displayed
     category_order = models.IntegerField(default=0)
+
     def __unicode__(self):
         return self.category_name
+
+    class Meta:
+        ordering = ["-category_order"]
 
 class page_container(models.Model):
     # Content of page and it's title. What max_length should be used here?
@@ -30,6 +34,10 @@ class page_container(models.Model):
     """
     In Python 3 __unicode__ will need to be replaced by __str__ (?)
     """
+
     def __unicode__(self):
         return self.page_title
         return self.page_content
+    
+    class Meta:
+        ordering = ["-page_order"]
