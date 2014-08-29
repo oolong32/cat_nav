@@ -9,10 +9,9 @@
     <li>{{ category.category_name }}</li>
       <ul>
       {% for product in category.page_container_set.all %}
-        {% comment %}
-        es wäre wünschenswert, mit 'if' herauszufinden, ob überhaupt produkte zur jeweiligen kategorie existieren.
-        {% endcomment %}
         <li>{{ product.page_title }}</li>
+      {% empty %}
+        <li>No products yet.</li>
       {% endfor %}
       </ul>
   {% endfor %}
