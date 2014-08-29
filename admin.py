@@ -3,7 +3,7 @@ from cat_nav.models import page_container, product_categories
 
 class PageAdmin(admin.ModelAdmin):
     # page container overview, show categories next to titles
-    list_display = ('page_title', 'page_categories')
+    list_display = ('page_title', 'page_categories', 'page_order')
     # page container edit page: show title and category in same field, then the content.
     fields = [('page_title', 'page_categories'), 'page_content', 'page_order']
     # filter pages by categories
