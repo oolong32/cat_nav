@@ -13,7 +13,7 @@ class product_categories(models.Model):
         return self.category_name
 
     class Meta:
-        ordering = ["-category_order"]
+        ordering = ["category_order"]
 
 class page_container(models.Model):
     # Content of page and it's title. What max_length should be used here?
@@ -40,4 +40,4 @@ class page_container(models.Model):
         return self.page_content
     
     class Meta:
-        ordering = ["-page_order"]
+        ordering = ["page_order"]
