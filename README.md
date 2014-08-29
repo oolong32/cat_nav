@@ -49,7 +49,7 @@ There should be tests for:
 
 It seems these tests aren't neccessary at all. Django doesn't allow a page without category and deletes pages, when their category is deleted (not without asking first, of course).
 
-##Documentation
+##Installation/Set Up
 
 I try to record all neccessary changes to files outside of the app (this repo). _project_folder_ needs to be changed to the respective project's name.
 
