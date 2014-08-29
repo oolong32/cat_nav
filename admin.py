@@ -5,7 +5,7 @@ class PageAdmin(admin.ModelAdmin):
     # page container overview, show categories next to titles
     list_display = ('page_title', 'page_categories')
     # page container edit page: show title and category in same field, then the content.
-    fields = [('page_title', 'page_categories'), 'page_content']
+    fields = [('page_title', 'page_categories'), 'page_content', 'page_order']
     # filter pages by categories
     list_filter = ['page_categories']
 
