@@ -6,7 +6,7 @@
 {% if object_list %}
   <ul>
   {% for category in object_list  %}
-    <li><a href="{% url 'products' category.id %}">{{ category.category_name }}</a></li>
+    <li>{{ category.category_name }}</li>
         {% for product in category.page_container_set.all %}
           {% comment %}
           es wäre wünschenswert, mit 'if' herauszufinden, ob überhaupt produkte zur jeweiligen kategorie existieren.
