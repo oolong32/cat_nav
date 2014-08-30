@@ -20,21 +20,19 @@ In order to build a webpage with a category based navigation the following is ne
 
 ###To Do
 
-* Change name "cat-nav"
-* Change name of class "product_categories" to "product_category"
+* Possibilty of choosing "context links" for a given product page[&sup2;](#2)
+* Retrieve Information from Link/URL to write HTML class
 * Change length of char field and text field in class "page_container"
   * page_title is too long
   * page_content is too short
-* Possibilty of choosing "context links" for a given product page[&sup2;](#2)
-* Retrieve Information from Link/URL to write HTML class
+* Change name "cat-nav"
+* Change name of class "product_categories" to "product_category"
 * Markdown editor for page content
 * Front-end design
 
 ###Obsolete/doesn't matter
 
 * What is the default category for a page? Needs to be set, otherwise an error will be raised or other kinds of trouble might arise
-
-
 
 ##Addendum
 
