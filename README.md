@@ -16,10 +16,15 @@ In order to build a webpage with a category based navigation the following is ne
 * Possibilty to define/change order of category list view
 * Possibilty to define/change order of page list view
 * Possibility to add links to other pages at the end of a page's content
+* Display "page order" field in product admin
 
 ###To Do
 
-* Display "page order" field in product admin
+* Change name "cat-nav"
+* Change name of class "product_categories" to "product_category"
+* Change length of char field and text field in class "page_container"
+_ page_title is too long
+_ page_content is too short
 * Possibilty of choosing "context links" for a given product page[&sup2;](#2)
 * Retrieve Information from Link/URL to write HTML class
 * Markdown editor for page content
@@ -40,6 +45,8 @@ Or it might not.
 
 ###<a name="2"></a>2)
 When editing the detail information for a given product, the user should be able to choose a couple of entries from a list of all existing products. Links to these product's detail pages should then be displayed at the bottom of a product's detail page once published.
+
+There's already a field in place (right now commented out), which needs to be tested.
 
 ##Tests
 
