@@ -9,7 +9,7 @@
     <li>{{ category.category_name }}</li>
       <ul>
       {% for product in category.page_container_set.all %}
-        <li>{{ product.page_title }}</li>
+        <li><a href="/cat_nav/{{product.id}}/">{{ product.page_title }}</a></li>
       {% empty %}
         <li>No products yet.</li>
       {% endfor %}
