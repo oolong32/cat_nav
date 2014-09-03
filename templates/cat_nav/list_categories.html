@@ -1,10 +1,14 @@
 {% if category_list %}
   <ul>
   {% for category in category_list %}
-  <li><a href="{% url 'products' category.id %}">{{ category.category_name }}</a></li>
+  <li class="category {{ category.category_name }}">
+  {{ category.category_name }}
+  {% ifequal active_category.page_categories.category_name category.category_name %}
+    <span style="color:red;"> # HIT!</span>
+  {% endifequal %}
+  </li>
   {% endfor %}
   </ul>
 {% else %}
   <p>No categories defined.</p>
-{% endif %}
-
+{% endif %} 
