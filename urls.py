@@ -7,7 +7,11 @@ urlpatterns = patterns('',
     url(r'^$', CategoryList.as_view()),
     # url(r'^(?P<page_categories_id>\d+)/$', views.products, name='products'),
     # url(r'^(?P<page_categories_id>\d+)/(?P<page_container_id>\d+)/$', PageDetails.as_view()),
-    url(r'^(?P<product_id>\d+)/$', PageDetails.as_view()),
+    url(r'^categories/(?P<pk>\d+)/$', CategoryList.as_view(), name='categories'),
+    url(r'^products/(?P<pk>\d+)/$', PageDetails.as_view(), name='products'),
+    #
+    # DetailView needs captured variable to be named "pk" as in tutorial part 4, amend views
+    #
 )
 """
 Der Index sollte alle Kategorien "gefaltet" zeigen.
