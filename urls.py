@@ -1,13 +1,13 @@
 from django.conf.urls import patterns, url
 
-from cat_nav.views import CategoryList, PageDetails
+from cat_nav.views import SimpleCategoryList, CategoryListDeluxe, PageDetails
 from cat_nav import views
 
 urlpatterns = patterns('',
-    url(r'^$', CategoryList.as_view()),
+    url(r'^$', SimpleCategoryList.as_view()),
     # url(r'^(?P<page_categories_id>\d+)/$', views.products, name='products'),
     # url(r'^(?P<page_categories_id>\d+)/(?P<page_container_id>\d+)/$', PageDetails.as_view()),
-    url(r'^categories/(?P<pk>\d+)/$', CategoryList.as_view(), name='categories'),
+    url(r'^categories/(?P<pk>\d+)/$', CategoryListDeluxe.as_view(), name='categories'),
     url(r'^products/(?P<pk>\d+)/$', PageDetails.as_view(), name='products'),
     #
     # DetailView needs captured variable to be named "pk" as in tutorial part 4, amend views
