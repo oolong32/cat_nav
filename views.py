@@ -8,4 +8,5 @@ class CategoryList(ListView):
 class PageDetails(DetailView):
     model = page_container
     context_object_name = 'product'
-    pk_url_kwarg = 'product_id' 
+    # pk_url_kwarg = 'product_id'  <-- not needed when using "pk" in urlConf
+
