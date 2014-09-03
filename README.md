@@ -22,6 +22,7 @@ In order to build a webpage with a category based navigation the following is ne
 
 * Possibilty of choosing "context links" for a given product page[&sup2;](#2)
 * Retrieve Information from Link/URL to write HTML class
+* Add Field to Page_Container for PDF File!
 * Change length of char field and text field in class "page_container"
   * page_title is too long
   * page_content is too short
