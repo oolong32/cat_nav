@@ -4,10 +4,17 @@
 {% block categories %}
 <h2>Categories</h2>
 
+  {{ my_category.category_name }}
+
 {% if all_categories %}
   <ul>
   {% for category in all_categories %}
-    <li><a href="{% url 'categories' category.id %}">{{ category.category_name }}</a></li>
+    <li>
+      <a href="{% url 'categories' category.id %}">{{ category.category_name }}</a>
+      {% ifequal my_category.category_name category.category_name  %}
+        <span style="color: blue;"> &larr; HIT!</span>
+      {% endifequal %}
+    </li>
       <ul>
       {% for product in category.page_container_set.all %}
         <li><a href="{% url 'products' product.id %}">{{ product.page_title }}</a></li>
