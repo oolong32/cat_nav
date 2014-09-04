@@ -1,1 +1,13 @@
-a {color: green;}
+a { text-decoration: none;}
+ul a {color: #0F4880;}
+ul ul a {color: #1565B2;}
+
+.highlight-product,
+.highlight-product a {
+  color: Orange;
+}
+
+.highlight-category,
+.highlight-category a {
+  color: GoldenRod;
+}
