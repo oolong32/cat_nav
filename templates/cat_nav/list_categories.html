@@ -1,14 +1,33 @@
 {% if category_list %}
+
   <ul>
-  {% for category in category_list %}
-  <li class="category {{ category.category_name }}">
-  {{ category.category_name }}
-  {% ifequal active_category.page_categories.category_name category.category_name %}
-    <span style="color:red;"> # HIT!</span>
-  {% endifequal %}
-  </li>
-  {% endfor %}
-  </ul>
+    {% for category in category_list %}
+
+    <li class="category {{ category.category_name }}">
+      {{ category.category_name }}
+      {% ifequal active_product.page_categories.category_name category.category_name %}
+        <span style="color:red;"> # HIT!</span>
+      {% endifequal %}
+    </li>
+
+    <ul>
+      {% for product in category.page_container_set.all %}
+
+      <li>
+        <a href="{% url 'products' product.id %}">{{ product.page_title }}</a>
+        {% ifequal product.page_title active_product.page_title %}
+        <span style="color: blue;"> # GET!</span>
+        {% endifequal %}
+      </li>
+
+      {% empty %}
+        <li>No products yet.</li>
+      {% endfor %}
+    </ul>
+
+    {% endfor %}
+    </ul>
+
 {% else %}
   <p>No categories defined.</p>
-{% endif %} 
+{% endif %}
