@@ -2,19 +2,17 @@
 {% block title %} – Category List! {% endblock %}
 
 {% block categories %}
-<h2>Categories</h2>
-
 {% if all_categories_and_some %}
   <ul>
   {% for category in all_categories_and_some %}
+    {% ifequal my_category.category_name category.category_name  %}
+    <li class="highlight-category">  
+    {% else %}
     <li>
+    {% endifequal %}
       <a href="{% url 'categories' category.id %}">{{ category.category_name }}</a>
-      {% if my_category %}
-        {% ifequal my_category.category_name category.category_name  %}
-          <span style="color: blue;"> &larr; HIT!</span>
-        {% endifequal %}
-      {% endif %}
     </li>
+
       <ul>
       {% for product in category.page_container_set.all %}
         <li><a href="{% url 'products' product.id %}">{{ product.page_title }}</a></li>
@@ -22,8 +20,10 @@
         <li>No products yet.</li>
       {% endfor %}
       </ul>
+
   {% endfor %}
   </ul>
+
 {% else %}
   <p>No categories defined.</p>
 {% endif %}

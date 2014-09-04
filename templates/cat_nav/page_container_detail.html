@@ -1,17 +1,11 @@
+{% extends "cat_nav/base.html" %}
 {% load list_categories %}
+
+{% block categories %}
+  {% list_categories %}
+{% endblock %}
+
+{% block product-details %}
 <h1>{{ product }}</h1>
-
-<hr />
-
-<h2>Kategorie</h2>
-<p>{{ product.page_categories}}</p>
-
-<hr />
-
-<h2>Beschrieb</h2>
-<p>{{ product.page_content }}</p>
-
-<hr />
-
-<h2>Alle Kategorien</h2>
-{% list_categories %}
+<p>{{ product.page_content }}</p> 
+{% endblock %}
