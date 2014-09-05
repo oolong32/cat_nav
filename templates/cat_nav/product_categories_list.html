@@ -11,7 +11,6 @@
     <li>
     {% endifequal %}
       <a href="{% url 'categories' category.id %}">{{ category.category_name }}</a>
-    </li>
 
       <ul>
       {% for product in category.page_container_set.all %}
@@ -20,6 +19,8 @@
         <li>No products yet.</li>
       {% endfor %}
       </ul>
+
+    </li>
 
   {% endfor %}
   </ul>
