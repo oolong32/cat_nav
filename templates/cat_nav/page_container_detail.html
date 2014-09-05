@@ -8,6 +8,8 @@
 {% block product-details %}
 <h1>{{ product }}</h1>
 <p>{{ product.page_content }}</p> 
+
+<h2>Context Links</h2>
 <ul>
   {% if product.page_context_links %}
     {% for context_page in product.page_context_links.all %}
