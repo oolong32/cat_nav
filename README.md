@@ -2,9 +2,11 @@
 
 ##What is needed
 
-In order to build a webpage with a three-column layout, whereas the first two columns contain a list of categories and a list of pages respectively while the third column contains the "page", the following is needed:
+In order to build a webpage with a category based navigation the following is needed:
 
-* Add one[&sup1;](#one) category to a _page_
+###Check
+
+* Add one[&sup1;](#1) category to a _page_
 * List these categories
 * List names of pages for each category
 * Dropdown list of existing categories in admin interface of page (or radio buttons?)
@@ -13,20 +15,37 @@ In order to build a webpage with a three-column layout, whereas the first two co
 * Impossibility of publishing without choosing a category
 * Possibilty to define/change order of category list view
 * Possibilty to define/change order of page list view
-* Markdown editor for page content
 * Possibility to add links to other pages at the end of a page's content
+* Display "page order" field in product admin
+
+###To Do
+
+* Possibilty of choosing "context links" for a given product page[&sup2;](#2)
+* Retrieve Information from Link/URL to write HTML class
+* Add Field to Page_Container for PDF File!
+* Change length of char field and text field in class "page_container"
+  * page_title is too long
+  * page_content is too short
+* Change name "cat-nav"
+* Change name of class "product_categories" to "product_category"
+* Markdown editor for page content
+* Front-end design
+
+###Obsolete/doesn't matter
+
 * What is the default category for a page? Needs to be set, otherwise an error will be raised or other kinds of trouble might arise
-
-
-
 
 ##Addendum
 
-###<a name="one"></a>1)
-
+###<a name="1"></a>1)
 At a later time the neccessity of being able to add more than one cateogory to a page might arise.
 
 Or it might not.
+
+###<a name="2"></a>2)
+When editing the detail information for a given product, the user should be able to choose a couple of entries from a list of all existing products. Links to these product's detail pages should then be displayed at the bottom of a product's detail page once published.
+
+There's already a field in place (right now commented out), which needs to be tested.
 
 ##Tests
 
@@ -37,7 +56,7 @@ There should be tests for:
 
 It seems these tests aren't neccessary at all. Django doesn't allow a page without category and deletes pages, when their category is deleted (not without asking first, of course).
 
-##Documentation
+##Installation/Set Up
 
 I try to record all neccessary changes to files outside of the app (this repo). _project_folder_ needs to be changed to the respective project's name.
 
