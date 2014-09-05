@@ -16,7 +16,7 @@ class page_container(models.Model):
     page_content = models.TextField('Content', max_length=1200)
     page_order = models.IntegerField('Order of Page', default=0)
     page_categories = models.ForeignKey(product_categories, verbose_name="Category")
-    # page_context_links = models.ManyToManyField("self")
+    page_context_links = models.ManyToManyField('self', blank=True, symmetrical=False)
     
     """
     In Python 3 __unicode__ will need to be replaced by __str__ (?)

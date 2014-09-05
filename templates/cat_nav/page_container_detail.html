@@ -8,4 +8,13 @@
 {% block product-details %}
 <h1>{{ product }}</h1>
 <p>{{ product.page_content }}</p> 
+<ul>
+  {% if product.page_context_links %}
+    {% for context_page in product.page_context_links.all %}
+    <li><a href="{% url 'products' context_page.id %}">{{ context_page }}</a></li>
+      {% empty %}
+  <p>Keine Kontext Links.</p>
+    {% endfor %}
+  {% endif %}
+</ul>
 {% endblock %}
