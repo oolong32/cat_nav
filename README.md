@@ -4,7 +4,7 @@
 
 In order to build a webpage with a category based navigation the following is needed:
 
-###Check
+###Done
 
 * Add one[&sup1;](#1) category to a _page_
 * List these categories
@@ -17,12 +17,12 @@ In order to build a webpage with a category based navigation the following is ne
 * Possibilty to define/change order of page list view
 * Possibility to add links to other pages at the end of a page's content
 * Display "page order" field in product admin
+* Retrieve Information from Link/URL to write HTML class
 
 ###To Do
 
 * Possibilty of choosing "context links" for a given product page[&sup2;](#2)
-* Retrieve Information from Link/URL to write HTML class
-* Add Field to Page_Container for PDF File!
+* Add Field to Page_Container for PDF File
 * Change length of char field and text field in class "page_container"
   * page_title is too long
   * page_content is too short
