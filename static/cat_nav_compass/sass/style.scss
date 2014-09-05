@@ -1,0 +1,32 @@
+body {
+	background: Linen;
+}
+
+a { text-decoration: none;}
+
+li ul {
+	display: none;
+}
+
+li.highlight-category ul {
+	display: block;
+}
+
+
+.highlight-category ul,
+.highlight-category ul {
+	li,
+	li a {
+		color: #1565B2;
+	}
+	li.highlight-product,
+	li.highlight-product a {
+		color: DeepPink;
+	}
+}
+
+
+// Categories normal
+ul li a { 
+	color: #0F4880;
+}
