@@ -18,10 +18,10 @@ In order to build a webpage with a category based navigation the following is ne
 * Possibility to add links to other pages at the end of a page's content
 * Display "page order" field in product admin
 * Retrieve Information from Link/URL to write HTML class
+* Possibilty of choosing "context links" for a given product page[&sup2;](#2)
 
 ###To Do
 
-* Possibilty of choosing "context links" for a given product page[&sup2;](#2)
 * Add Field to Page_Container for PDF File
 * Change length of char field and text field in class "page_container"
   * page_title is too long
@@ -88,6 +88,13 @@ CREATE TABLE "cat_nav_product_categories" (
     "id" integer NOT NULL PRIMARY KEY,
     "category_name" varchar(100) NOT NULL,
     "category_order" integer NOT NULL
+)
+;
+CREATE TABLE "cat_nav_page_container_page_context_links" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "from_page_container_id" integer NOT NULL,
+    "to_page_container_id" integer NOT NULL,
+    UNIQUE ("from_page_container_id", "to_page_container_id")
 )
 ;
 CREATE TABLE "cat_nav_page_container" (
