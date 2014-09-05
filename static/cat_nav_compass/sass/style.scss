@@ -13,8 +13,11 @@ li.highlight-category ul {
 }
 
 
-.highlight-category ul,
-.highlight-category ul {
+.highlight-category,
+.highlight-category {
+	a {
+		color: Orange;
+	}
 	li,
 	li a {
 		color: #1565B2;
