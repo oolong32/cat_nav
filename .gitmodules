@@ -1,0 +1,3 @@
+[submodule "static/cat_nav/yaml"]
+	path = static/cat_nav/yaml
+	url = https://github.com/yamlcss/yaml
