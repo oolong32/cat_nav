@@ -6,10 +6,10 @@
 {% endblock %}
 
 {% block product-details %}
-<h1>{{ product }}</h1>
+<h2>{{ product }}</h2>
 <p>{{ product.page_content }}</p> 
 
-<h2>Context Links</h2>
+<h3>Context Links</h3>
 <ul>
   {% if product.page_context_links %}
     {% for context_page in product.page_context_links.all %}
