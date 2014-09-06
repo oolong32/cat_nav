@@ -20,15 +20,34 @@
 </head>
 <body>
 
-<div class="content-block-1">
-{% block navigation %}
-{% endblock %}
-</div>
+  <div class="ym-wrapper">
+    <header>
+      <div class="ym-g40 ym-gl">
+        <h1>ESTÈPHE</h1>
+        <p style="text-transform: uppercase;">Communication Training</p>
+      </div>
 
-<div class="content-block-2">
-{% block product-details %}
-{% endblock %}
-</div>
+      <div class="ym-g60 ym-gr">
+        <p>lorem ipsum ein menü</p>
+      </div>
 
+    </header>
+
+    <main class="ym-grid">
+
+      <div class="ym-g40 ym-gl content-block-1">
+      {% block navigation %}
+      {% endblock %}
+      </div>
+
+      <div style="border-left: dotted gray 1px" class="ym-g60 ym-gr content-block-2">
+      {% block product-details %}
+      {% endblock %}
+      </div>
+
+    </main>
+    <footer><p>© estèphe 2014</p></footer>
+
+  </div> <!-- end ym-wrapper -->
 </body>
 </html>

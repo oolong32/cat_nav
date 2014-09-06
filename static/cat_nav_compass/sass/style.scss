@@ -4,8 +4,23 @@ html,* {
 	box-sizing: border-box;
 }
 
-body {
-	background: Linen;
+// body {
+// 	background: Linen;
+// }
+
+.ym-wrapper {
+	min-width: 600px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 1em 0;
+	margin-bottom: 8em;
+}
+
+.content-block-2 {
+	padding-left: 1em;
 }
 
 a { text-decoration: none;}
