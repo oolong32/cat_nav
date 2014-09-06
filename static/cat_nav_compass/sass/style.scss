@@ -1,12 +1,14 @@
 @import url("yaml/yaml/core/base.min.css");
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,300italic,800);
 
 html,* {
 	box-sizing: border-box;
 }
 
-// body {
-// 	background: Linen;
-// }
+body {
+	background: #fafafa;
+}
 
 .ym-wrapper {
 	min-width: 600px;
@@ -17,13 +19,45 @@ html,* {
 header {
 	padding: 1em 0;
 	margin-bottom: 8em;
+	h1 {
+		font-size: 2.875em;
+	}
+	p {
+		font-size: 0.875em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		word-spacing: 5px;
+	}
+}
+
+main {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	h2 {
+	}
+	h3 {
+		margin-top: 2em;
+	}
+	p {
+	}
 }
 
 .content-block-2 {
 	padding-left: 1em;
 }
 
-a { text-decoration: none;}
+a {
+	text-decoration: none;
+}
+
+li { // categories
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	ul li { // products
+		text-transform: none;
+		letter-spacing: none;
+	}
+}
 
 li ul {
 	display: none;
@@ -37,20 +71,20 @@ li.highlight-category ul {
 .highlight-category,
 .highlight-category {
 	a {
-		color: Orange;
+		// color: Orange;
 	}
 	li,
 	li a {
-		color: #1565B2;
+		// color: #1565B2;
 	}
 	li.highlight-product,
 	li.highlight-product a {
-		color: DeepPink;
+		color: DimGray;
 	}
 }
 
 
 // Categories normal
 ul li a { 
-	color: #0F4880;
+	color: black;
 } 
