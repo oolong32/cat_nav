@@ -1,3 +1,9 @@
+@import url("yaml/yaml/core/base.min.css");
+
+html,* {
+	box-sizing: border-box;
+}
+
 body {
 	background: Linen;
 }
@@ -32,4 +38,4 @@ li.highlight-category ul {
 // Categories normal
 ul li a { 
 	color: #0F4880;
-}
+} 

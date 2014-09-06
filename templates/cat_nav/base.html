@@ -9,6 +9,14 @@
   {% load staticfiles %}
   <link rel="stylesheet" type="text/css" href="{% static 'cat_nav/style.css' %}">
 
+  <!--[if lte IE 7]>
+    <link rel="stylesheet" href="{% static 'cat_nav/yaml/yaml/core/iehacks.min.css' %}" type="text/css"/>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="{% static 'cat_nav/yaml/lib/html5shiv/html5shiv.js' %}"></script>
+  <![endif]-->
+
 </head>
 <body>
 
