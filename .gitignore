@@ -3,3 +3,4 @@
 *.css
 *.scssc
 static/cat_nav_compass/.sass-cache/**
+*.swo
