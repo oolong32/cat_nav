@@ -1,12 +1,14 @@
 {% extends "cat_nav/base.html" %}
 {% load list_categories %}
 
+{% block title %}{{ product.page_title }}{% endblock %}
+
 {% block navigation %}
   {% list_categories %}
 {% endblock %}
 
 {% block product-details %}
-<h2>{{ product }}</h2>
+<h2>{{ product.page_title }}</h2>
 <p>{{ product.page_content }}</p> 
 
 <h3>Context Links</h3>
