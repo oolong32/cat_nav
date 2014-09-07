@@ -10,6 +10,8 @@ class product_categories(models.Model):
 
     class Meta:
         ordering = ["category_order"]
+        verbose_name = 'Product Category'
+        verbose_name_plural = 'Product Categories'
 
 class page_container(models.Model):
     page_title = models.CharField('Title', max_length=200)
@@ -28,3 +30,5 @@ class page_container(models.Model):
     
     class Meta:
         ordering = ["page_order"]
+        verbose_name = 'Product Detail'
+        verbose_name_plural = 'Product Details'
